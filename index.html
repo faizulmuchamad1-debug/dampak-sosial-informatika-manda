@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dampak Sosial Informatika</title>
+    <!-- Impor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Impor Font Inter dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+            darkMode: 'class', // Mengaktifkan mode gelap
+        }
+    </script>
+    <style>
+        /* Menambahkan gaya dasar untuk body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Menerapkan anti-aliasing untuk teks yang lebih halus */
+        .antialiased {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                Informatika & Masyarakat
+            </div>
+            <div class="flex space-x-4 md:space-x-6">
+                <a href="#positif" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Positif</a>
+                <a href="#negatif" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Negatif</a>
+                <a href="#bijak" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Bijak</a>
+            </div>
+            <!-- Tombol Dark Mode (Sederhana) -->
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                <!-- Ikon Bulan (Default) -->
+                <svg id="theme-icon-dark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                <!-- Ikon Matahari (Hidden by default) -->
+                <svg id="theme-icon-light" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Hero -->
+        <section class="text-center py-20 px-6 bg-white dark:bg-gray-800">
+            <div class="container mx-auto">
+                <svg class="w-16 h-16 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                <h1 class="text-4xl md:text-5xl font-extrabold mt-4 text-gray-900 dark:text-white">Dampak Sosial Informatika</h1>
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mt-4 max-w-3xl mx-auto">
+                    Informatika telah mengubah cara kita hidup, bekerja, dan berinteraksi. Mari jelajahi dua sisi mata uang dari revolusi digital ini.
+                </p>
+            </div>
+        </section>
+
+        <!-- Bagian Dampak Positif -->
+        <section id="positif" class="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    Sisi Terang Revolusi Digital
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card Positif 1 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Akses Informasi</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Pendidikan, berita, dan ilmu pengetahuan dari seluruh dunia dapat diakses secara instan dan mudah oleh siapa saja.
+                        </p>
+                    </div>
+
+                    <!-- Card Positif 2 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Komunikasi Global</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Media sosial, email, dan aplikasi pesan instan menghubungkan keluarga dan teman tanpa memandang batas geografis.
+                        </p>
+                    </div>
+
+                    <!-- Card Positif 3 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Peluang Ekonomi</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Lahirnya E-commerce, pekerjaan jarak jauh (remote work), dan profesi baru di bidang digital membuka lapangan kerja yang luas.
+                        </p>
+                    </div>
+
+                    <!-- Card Positif 4 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Efisiensi Layanan</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Layanan perbankan (e-banking), kesehatan (telemedicine), dan pemerintahan (e-government) menjadi lebih cepat dan efisien.
+                        </p>
+                    </div>
+
+                    <!-- Card Positif 5 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Aktivisme Sosial</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Teknologi memfasilitasi gerakan sosial, penggalangan dana (crowdfunding), dan meningkatkan kesadaran akan isu-isu penting.
+                        </p>
+                    </div>
+                    
+                    <!-- Card Positif 6 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0zM10 16.5v-1.5m0 1.5V14m0-2.5v-6a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0zM13 11.5V14m0-2.5v-6a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0zM16 16.5v-1.5m0 1.5V14m0-2.5v-6a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Inovasi & Kolaborasi</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Mempercepat laju inovasi di berbagai bidang (sains, seni, bisnis) melalui kolaborasi digital dan *open-source*.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Dampak Negatif -->
+        <section id="negatif" class="py-20 px-6 bg-white dark:bg-gray-800">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    Tantangan di Era Digital
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card Negatif 1 -->
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Disinformasi & Hoaks</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Berita palsu dan informasi yang salah menyebar dengan sangat cepat, memicu kepanikan dan perpecahan sosial.
+                        </p>
+                    </div>
+
+                    <!-- Card Negatif 2 -->
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Kejahatan Siber</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Pencurian data, penipuan (phishing), peretasan, dan penyebaran malware mengancam keamanan finansial dan pribadi.
+                        </p>
+                    </div>
+
+                    <!-- Card Negatif 3 -->
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Kecanduan Digital</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Ketergantungan berlebihan pada media sosial, game, dan gawai dapat mengganggu kesehatan mental dan produktivitas.
+                        </p>
+                    </div>
+
+                    <!-- Card Negatif 4 -->
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.124-1.28-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.124-1.28.356-1.857m0 0a3.001 3.001 0 015.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Cyberbullying</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Perundungan yang terjadi di dunia maya dapat menyebabkan depresi, kecemasan, dan dampak psikologis serius lainnya.
+                        </p>
+                    </div>
+                    
+                    <!-- Card Negatif 5 -->
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0v-8m0 8l-8-8M13 17H5m0 0v-8m0 8l8-8"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Kesenjangan Digital</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Perbedaan akses teknologi antara daerah perkotaan dan pedesaan, serta antar kelompok ekonomi, menciptakan ketimpangan baru.
+                        </p>
+                    </div>
+                    
+                    <!-- Card Negatif 6 -->
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-12 h-12 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Masalah Privasi</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Pengumpulan data pribadi secara masif oleh perusahaan teknologi menimbulkan kekhawatiran akan privasi dan pengawasan.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Call to Action / Bijak -->
+        <section id="bijak" class="py-20 px-6 bg-blue-600 text-white">
+            <div class="container mx-auto text-center">
+                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+                    Menjadi Pengguna yang Bijak
+                </h2>
+                <p class="text-lg md:text-xl opacity-90 max-w-3xl mx-auto mb-8">
+                    Teknologi adalah alat yang netral. Dampaknya, baik atau buruk, bergantung sepenuhnya pada bagaimana kita memilih untuk menggunakannya. Mari berkomitmen untuk memanfaatkan informatika secara bertanggung jawab, kritis, dan etis demi kebaikan bersama.
+                </p>
+                <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors shadow-lg text-lg">
+                    Mulai Beraksi
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-950 text-gray-400 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Dampak Sosial Informatika. Dibuat untuk tujuan edukasi.</p>
+            <p class="text-sm mt-2">Menjelajahi Era Digital dengan Kesadaran.</p>
+        </div>
+    </footer>
+
+    <!-- Skrip untuk Toggle Dark Mode -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIconDark = document.getElementById('theme-icon-dark');
+        const themeIconLight = document.getElementById('theme-icon-light');
+        const htmlElement = document.documentElement;
+
+        // Cek tema saat ini dari localStorage atau preferensi sistem
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+            themeIconLight.classList.remove('hidden');
+            themeIconDark.classList.add('hidden');
+        } else {
+            htmlElement.classList.remove('dark');
+            themeIconLight.classList.add('hidden');
+            themeIconDark.classList.remove('hidden');
+        }
+
+        // Tambahkan event listener untuk tombol
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            
+            // Simpan preferensi di localStorage
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                themeIconLight.classList.remove('hidden');
+                themeIconDark.classList.add('hidden');
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeIconLight.classList.add('hidden');
+                themeIconDark.classList.remove('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
